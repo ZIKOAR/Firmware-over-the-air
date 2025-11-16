@@ -39,7 +39,7 @@ void Turn_off_led(void){
 }
 
 void delay(void){
-    for( int i = 0 ; i < 100000000 ; i++);
+    for( int i = 0 ; i < 1000000 ; i++);
 };
 
 void Button_state (int * state){

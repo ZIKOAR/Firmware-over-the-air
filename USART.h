@@ -20,11 +20,8 @@
 #define USART_DR_offset (0x04)
 #define USART_DR (*(volatile unsigned int *) (USART2_Base_Adress + USART_DR_offset))
 
-#define RCC_APB1ENR_offset (0x40)
-#define RCC_APB1ENR (*(volatile unsigned int *) (RCC_Base_Adress + RCC_APB1ENR_offset))
-
 #define GPIOA_AFRL_offset (0x20)
-#define GPIOA_AFRL (*(volatile unsigned int *) (GPIOA_Base_Adress +  GPIOA_AFRL_offset)
+#define GPIOA_AFRL (*(volatile unsigned int *) (GPIOA_Base_Adress +  GPIOA_AFRL_offset))
 
 void USART_Init(void);
 void USART_BaudRate(uint32_t clock ,uint32_t BR);

@@ -13,10 +13,10 @@
 #define APB2_Base_Adress (Peripherals_Base_Adress + APB2_Peripherals_offset)
 
 #define AHB1_Peripherals_offset 0x00020000U
-#define AHB1_Base_Adress (Peripherals_Base_Adress + APB1_Peripherals_offset)
+#define AHB1_Base_Adress (Peripherals_Base_Adress + AHB1_Peripherals_offset)
 
 #define AHB2_Peripherals_offset 0x10000000U
-#define AHB2_Base_Adress (Peripherals_Base_Adress + APB2_Peripherals_offset)
+#define AHB2_Base_Adress (Peripherals_Base_Adress + AHB2_Peripherals_offset)
 
 #define USART2_Peripherals_offset 0x00004400U
 #define USART2_Base_Adress (APB1_Base_Adress + USART2_Peripherals_offset)
