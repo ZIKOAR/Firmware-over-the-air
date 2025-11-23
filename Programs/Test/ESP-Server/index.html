@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>STM32 FOTA - ESP32-Server</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<h1>STM32 FOTA - ESP32-Server</h1>
+			<div class="main-content">
+				<label for="bin-file" id="bin-file-label"
+					>Select a BIN file (.bin):</label
+				>
+				<input
+					type="file"
+					name="bin-file"
+					id="bin-file"
+					accept=".bin"
+					maxlength="1"
+					required
+					hidden
+				/>
+
+				<div class="buttons">
+					<button type="button" id="log-file">Log file</button>
+					<button type="button" id="send-file">Send file</button>
+					<button type="button" id="clear-file">Clear (Size: Empty)</button>
+				</div>
+
+				<textarea
+					id="bin-file-content"
+					placeholder="BIN (.bin) file content"
+					readonly
+					rows="10"
+				></textarea>
+			</div>
+		</div>
+	</body>
+</html>
